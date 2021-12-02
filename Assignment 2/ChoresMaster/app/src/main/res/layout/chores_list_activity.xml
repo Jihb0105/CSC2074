@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main page layout that contain the added chores -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#3A3B3C">
+
+    <ImageView
+        android:id="@+id/thumbnail_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="31dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/thumbnail_image"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/recycle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/recycle_date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/recycle_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:textColor="@color/abc_secondary_text_material_dark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/recycle_time"
+            app:layout_constraintTop_toBottomOf="@+id/recycle_title" />
+
+        <ImageView
+            android:id="@+id/active_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="-50dp"
+            android:src="@drawable/house_chores_white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

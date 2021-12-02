@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChoresMaster</string>
+    <string name="add_chores">Chores</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="chores_completed">Completed</string>
+    <string name="new_chore">New Chore</string>
+    <string name="count_chores">Count Chores</string>
+    <string name="count_format">%1$d Chores</string>
+    <string name="delete_chores">Delete Chore</string>
+</resources>
